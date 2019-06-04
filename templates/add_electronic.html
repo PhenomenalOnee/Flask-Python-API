@@ -1,0 +1,24 @@
+<html>
+   <body>
+	  <style>
+			body {
+				background-image: url({{url_for('static',filename='sky.jpg')}})}
+			h1 {
+				color: violet; }
+			h2 {
+				color: cyan;}
+	  </style>
+      <form align='center' action = "{{ url_for('addelec') }}" method = "POST">
+         <h1 align='center' >Employee Information</h1>
+         <font size="25" color="yellow">Item Name</font><br>
+         <input style="height:25px;font-size:14pt" type = "text" name = "nm" /></br>
+         
+         <font size="25" color="yellow">Item ID</font><br>
+         <textarea name = "id" ></textarea><br>
+       
+         <font size="25" color="yellow">Quantity</font><br>
+         <input style="height:25px;font-size:14pt" type = "text" name = "quan" /><br>
+         <br /><input style="height:36px;font-size:14pt;width='35px" type = "submit" value = "Submit" /><br>
+      </form>
+   </body>
+</html>

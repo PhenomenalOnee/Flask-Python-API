@@ -1,0 +1,32 @@
+<html>
+   <body>
+		<style>
+			body {
+				background-image: url({{url_for('static',filename='sky.jpg')}})}
+			h1 {
+				color: violet; }
+			h2 {
+				color: cyan;}
+		</style>
+		
+      <form align='center' action = "{{ url_for('addrec') }}" method = "POST">
+         <h1>Employee Information</h1>
+         <font size='12' color="yellow">Name</font><br>
+         <input style="height:25px;font-size:14pt" type = "text" name = "nm" /></br>
+         
+		 <font size='12' color="yellow">Password</font><br>
+         <input style="height:25px;font-size:14pt" type = "password" name = "pass" /></br>
+		 
+         <font size="10" color="yellow">Address</font><br>
+         <textarea name = "add" ></textarea><br>
+         
+         <font size="10" color="yellow">City</font><br>
+         <input style="height:25px;font-size:14pt" type = "text" name = "city" /><br>
+         
+         <font size="10" color="yellow">PINCODE</font><br>
+         <input style="height:25px;font-size:14pt" type = "text" name = "pin" /></br>
+		 
+         <br /><input style="height:36px;font-size:14pt;width='35px" type = "submit" value = "Submit" /><br>
+      </form>
+   </body>
+</html>

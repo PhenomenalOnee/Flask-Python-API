@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Login Table</title>
+		<style>
+			body {
+				background-image: url({{url_for('static',filename='sky.jpg')}})}
+		</style>
+	</head>
+   <body>
+      <table width="400" cellpadding="10" cellspacing="5" border="2" bgcolor="#efefef" align='center'>
+         <thead style="height:36px;font-size:20pt;width='35px">
+            <td align='center'>Name</td>
+			<td align='center'>Password</td>
+            <td align='center'>Address</td>
+            <td align='center'>city</td>
+            <td align='center'>Pincode</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td align='center'>{{row[0]}}</td>
+			   <td align='center'>{{row[1]}}</td>
+               <td align='center'>{{row[2]}}</td>
+               <td align='center'> {{ row[3]}}</td>
+               <td align='center'>{{row[4 ]}}</td>	
+            </tr>
+         {% endfor %}
+      </table>
+      
+      <h1  align='center'><a style="color:yellow" href = "/">Home Page</a><h1>
+   </body>
+</html>

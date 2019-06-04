@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<style>
+			body {
+				background-image: url({{url_for('static',filename='sky.jpg')}})}
+			h1 {
+				color: violet; }
+			h2 {
+				color: cyan;}
+		</style>
+		<title>LOGIN SCREEN</title>	
+	</head>
+	<body>
+		<h1 align='center'>WELCOME</h1>
+		<h2 align='center'>Please Enter The Details</h2>
+		<form  align='center' action = "{{ url_for('logindetails') }}" method = "POST">
+			<font size="25" color="yellow">Name</font><br>
+			<input style="height:25px;font-size:14pt" type='text' name='nm' /></br>
+			<font size="25" color="yellow">Password</font><br>
+			<input style="height:25px;font-size:14pt" type='password' name='pass' /></br>
+			<br /><input style="height:36px;font-size:14pt;width='35px" type = "submit" value = "Submit" /><br>
+		</form>
+	</body>
+<html>

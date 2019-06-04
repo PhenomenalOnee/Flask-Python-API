@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Deletion</title>
+		<style>
+			body {
+				background-image: url({{url_for('static',filename='sky.jpg')}})}
+			h1 {
+				color: violet; }
+			h2 {
+				color: cyan;}
+		</style>	
+	</head>
+	<body>
+		<h1 align='center' >DELETION</h1>
+		<h2 align='center'>Please Enter The Name Of The Employee</h2>
+		<h2 align='center'>To Be Deleted</h2>
+		<form align='center' action = "{{ url_for('delete') }}" method = "POST">
+			<font size="25" color="yellow">Name</font><br>
+			<input style="height:25px;font-size:14pt" type='text' name='nm' /></br>
+			
+			<br /><input style="height:36px;font-size:14pt;width='35px" type = "submit" value = "submit" /><br>
+		</form>
+	</body>
+<html>
